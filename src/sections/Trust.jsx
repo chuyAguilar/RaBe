@@ -5,7 +5,7 @@ import { TransportIcon } from "../components/TransportIcon"
 export function Trust() {
 
     return (
-        <section className="py-20 bg-gradient-to-b from-blue-950 via-blue-900 to-blue-800">
+        <section className="py-10 bg-gradient-to-b from-blue-950 via-blue-900 to-blue-800">
             <div className="max-w-5xl mx-auto px-6">
 
                 <div className="text-center mb-12">

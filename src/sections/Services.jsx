@@ -6,14 +6,14 @@ import { AirportIcon } from "../components/AirportIcon"
 export function Services() {
 
     return (
-        <section class="py-24 bg-gradient-to-b from-blue-800 to-blue-50">
+        <section class="py-10 bg-gradient-to-b from-blue-800 to-blue-50 mt-0">
             <div class="max-w-6xl mx-auto px-6">
 
                 <h2 class="text-3xl font-bold text-white">
                     Nuestros Servicios
                 </h2>
 
-                <p class="text-white mt-4 max-w-2xl">
+                <p class="text-white mt-4 max-w-2xl mb-15">
                     Ofrecemos distintas modalidades de traslado adaptadas a tus necesidades.
                 </p>
 
