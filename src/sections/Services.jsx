@@ -17,8 +17,7 @@ export function Services() {
                     Ofrecemos distintas modalidades de traslado adaptadas a tus necesidades.
                 </p>
 
-                <div className="grid grid-cols-3 gap-8 mt-12"
->
+               <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
 
                     <Card
                         tittle="Traslados Locales"
@@ -35,6 +34,7 @@ export function Services() {
                     </Card>
 
                     <Card
+                        className="col-span-2 lg:col-span-1"
                         tittle="Aeropuerto y Ejecutivos"
                         subtittle="Traslados a AIFA, CDMX y compromisos empresariales con atención puntual y directa."
                     >

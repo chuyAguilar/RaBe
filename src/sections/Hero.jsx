@@ -7,7 +7,7 @@ export function Hero(props) {
         message } = props
     return (
         <section
-            className="relative min-h-screen flex items-center justify-center px-6 bg-cover bg-center"
+            className="relative min-h-screen flex items-center justify-center px-6 bg-cover bg-[position:65%_center] sm:bg-center"
             style={{ backgroundImage: "url('/heroImg.png')" }}
         >
             <div className="absolute inset-0 bg-black/40"></div>
