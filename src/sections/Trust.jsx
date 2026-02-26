@@ -1,7 +1,7 @@
 import { Card } from "../components/Card"
-import { FacturaIcon } from "../components/FacturaIcon"
-import { CalendarIcon } from "../components/CalendarIcon"
-import { TransportIcon } from "../components/TransportIcon"
+import { FacturaIcon } from "../components/Icons/FacturaIcon"
+import { CalendarIcon } from "../components/Icons/CalendarIcon"
+import { TransportIcon } from "../components/Icons/TransportIcon"
 export function Trust() {
 
     return (

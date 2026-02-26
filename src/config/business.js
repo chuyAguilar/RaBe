@@ -7,10 +7,12 @@ export const business = {
 
     contact: {
         phone: "7737364189",
+        phone2: "7731473977",
         // phone: "7732290121",
         trackingMessages: {
             instant: "Hola, he visto tu web y quiero solicitar un viaje",
-            scheduled: "Hola, quiero viajar de (x) a (x) el dia (dia) a (hora) hora"
+            scheduled: "Hola, quiero viajar de (x) a (x) el dia (dia) a (hora) hora",
+            factura:"Hola! tengo una duda sobre facturación."
         }
     }
     ,

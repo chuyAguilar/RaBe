@@ -1,8 +1,10 @@
 import { Card } from "../components/Card"
-import { LocalIcon } from "../components/LocalIcon"
-import { MapIcon } from "../components/MapIcon"
-import { AirportIcon } from "../components/AirportIcon"
-
+import { LocalIcon } from "../components/Icons/LocalIcon"
+import { MapIcon } from "../components/Icons/MapIcon"
+import { AirportIcon } from "../components/Icons/AirportIcon"
+import { Teams } from "../components/Icons/Teams"
+import { WhatsAppButton } from "../components/WhatsAppButton"
+import { business } from "../config/business"
 export function Services() {
 
     return (
@@ -35,10 +37,18 @@ export function Services() {
 
                     <Card
                         className="col-span-2 lg:col-span-1"
-                        tittle="Aeropuerto y Ejecutivos"
-                        subtittle="Traslados a AIFA, CDMX y compromisos empresariales con atención puntual y directa."
+                        tittle="Rutas de Alta Demanda"
+                        subtittle="Traslados recurrentes a AIFA y Aeropuerto Internacional de la Ciudad de México, hospitales en CDMX y Pachuca, así como viajes constantes a Ciudad de México, Pachuca, Puebla y Querétaro."
                     >
                         <AirportIcon className="h-12 w-12 text-blue-700" />
+                    </Card>
+
+                    <Card
+                        className="col-span-2 lg:col-span-1"
+                        tittle="Empresas que Confían en Nosotros"
+                        subtittle="•UNNE • Construcciones Industriales Frama S.A. de C.V. • First Plus Tula Hidalgo • Sika – Planta Tula • Empresas del sector industrial y logístico en la región."
+                    >
+                        <Teams className="h-12 w-12 text-blue-700"/>
                     </Card>
 
                 </div>
@@ -48,14 +58,21 @@ export function Services() {
                     <div className="max-w-3xl mx-auto bg-white/70 backdrop-blur-sm border border-slate-200 rounded-xl p-8 text-center">
 
                         <h3 className="text-xl font-semibold text-blue-900 mb-3">
-                            Disponible para empresas
-                        </h3>
-
+                    ¿Ya viajaste y requieres factura?
+                    </h3>
                         <p className="text-slate-600">
-                            Servicio con facturación electrónica y pago con tarjeta para traslados recurrentes o programados.
-                        </p>
+Si ya realizaste tu traslado y necesitas apoyo con tu factura, comunícate con nosotros y con gusto te asistimos.                        </p>
 
+
+            <div className="mt-4">
+ <WhatsAppButton
+                phone={business.contact.phone2}
+                message={business.contact.trackingMessages.factura}
+                label="Informes"
+            />
+            </div>
                     </div>
+                    
                 </div>
 
             </div>
