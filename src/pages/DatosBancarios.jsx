@@ -65,7 +65,7 @@ export default function DatosBancarios() {
 					<div className="bg-slate-900 p-6 md:p-8 flex items-center justify-between">
 						<div>
 							<p className="text-slate-400 tracking-wider text-[10px] md:text-xs font-bold uppercase mb-1">Banco: Inbursa Visa</p>
-							<h2 className="text-lg md:text-xl font-bold text-white leading-tight">Mayra Carmer Bernal Juárez</h2>
+							<h2 className="text-lg md:text-xl font-bold text-white leading-tight">Mayra Carmen Bernal Juárez</h2>
 						</div>
 						{/* Subtle Bank Icon Indicator */}
 						<div className="h-10 w-10 bg-slate-800 rounded-full flex items-center justify-center border border-slate-700">
@@ -83,6 +83,10 @@ export default function DatosBancarios() {
 
 						<div className="border-t border-slate-100 pt-6">
 							<DataRow label="CLABE Interbancaria" value="036311500265494025" copyId="inbursa-clabe" />
+						</div>
+
+						<div className="border-t border-slate-100 pt-6">
+							<DataRow label="Alias" value="50026549402" copyId="inbursa-alias" />
 						</div>
 					</div>
 				</div>
@@ -104,7 +108,7 @@ export default function DatosBancarios() {
 					{/* Card Body */}
 					<div className="p-6 md:p-8 flex-grow flex flex-col gap-6">
 						{/* In the image, the account number is formatted with spaces */}
-						<DataRow label="Número de Cuenta / CLABE" value="012 180 01523943200 9" copyId="bbva-cuenta" />
+						<DataRow label="Cuenta Clabe" value="012 180 0152 3943 2009" copyId="bbva-cuenta" />
 
 						<div className="border-t border-slate-100 pt-6">
 							<DataRow label="Número de Tarjeta de Débito" value="4152 3143 3099 6870" copyId="bbva-tarjeta" />

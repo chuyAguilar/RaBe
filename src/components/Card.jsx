@@ -1,12 +1,21 @@
 
 export function Card(props) {
-    const { tittle, subtittle,children, className = "" } = props
-    return (
-        <div className={`bg-white max-w-sm p-6  rounded-lg shadow-xs flex flex-col items-center hover:bg-blue-200 ${className}`}>
+	const { tittle, subtittle, children, className = "" } = props
+	return (
+		<div className={`group bg-white p-7 rounded-xl border border-slate-100 shadow-sm flex flex-col gap-4 hover:shadow-md hover:border-blue-200 transition-all duration-300 ${className}`}>
+			{/* Icono */}
+			<div className="p-2 w-fit rounded-lg bg-slate-50 group-hover:bg-blue-50 transition-colors duration-300">
+				{children}
+			</div>
 
-            {children}
-            <h5 className="text-center mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">{tittle}</h5>
-            <p className="text-center">{subtittle}</p>
-        </div>
-    )
+			<div>
+				<h5 className="text-lg font-semibold text-slate-800 leading-snug mb-2">
+					{tittle}
+				</h5>
+				<p className="text-slate-500 text-sm leading-relaxed font-light">
+					{subtittle}
+				</p>
+			</div>
+		</div>
+	)
 }
