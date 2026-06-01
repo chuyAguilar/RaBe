@@ -59,7 +59,31 @@ export default function DatosBancarios() {
 			{/* Cards Container */}
 			<div className="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
 
-				{/* Inbursa Card */}
+				{/* BBVA Card — David (izquierda / primero en móvil) */}
+				<div className="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 duration-300">
+					{/* Card Header */}
+					<div className="bg-[#072146] p-6 md:p-8 flex items-center justify-between">
+						<div>
+							<p className="text-blue-200 tracking-wider text-[10px] md:text-xs font-bold uppercase mb-1">Banco: BBVA Bancomer</p>
+							<h2 className="text-lg md:text-xl font-bold text-white leading-tight">David Sergio Ramirez del Rio</h2>
+						</div>
+						{/* Subtle Bank Icon Indicator */}
+						<div className="h-10 w-10 bg-[#0A3066] rounded-full flex items-center justify-center border border-[#144385]">
+							<span className="text-white font-bold text-sm">BBVA</span>
+						</div>
+					</div>
+
+					{/* Card Body */}
+					<div className="p-6 md:p-8 flex-grow flex flex-col gap-6">
+						<DataRow label="Cuenta Clabe" value="012 180 0152 3943 2009" copyId="bbva-cuenta" />
+
+						<div className="border-t border-slate-100 pt-6">
+							<DataRow label="Número de Tarjeta de Débito" value="4152 3143 3099 6870" copyId="bbva-tarjeta" />
+						</div>
+					</div>
+				</div>
+
+				{/* Inbursa Card — Mayra (derecha / segundo en móvil) */}
 				<div className="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 duration-300">
 					{/* Card Header */}
 					<div className="bg-slate-900 p-6 md:p-8 flex items-center justify-between">
@@ -87,31 +111,6 @@ export default function DatosBancarios() {
 
 						<div className="border-t border-slate-100 pt-6">
 							<DataRow label="Alias" value="50026549402" copyId="inbursa-alias" />
-						</div>
-					</div>
-				</div>
-
-				{/* BBVA Card */}
-				<div className="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 duration-300">
-					{/* Card Header - Note the BBVA Dark Blue shade (approx #072146) */}
-					<div className="bg-[#072146] p-6 md:p-8 flex items-center justify-between">
-						<div>
-							<p className="text-blue-200 tracking-wider text-[10px] md:text-xs font-bold uppercase mb-1">Banco: BBVA Bancomer</p>
-							<h2 className="text-lg md:text-xl font-bold text-white leading-tight">David Sergio Ramirez del Rio</h2>
-						</div>
-						{/* Subtle Bank Icon Indicator */}
-						<div className="h-10 w-10 bg-[#0A3066] rounded-full flex items-center justify-center border border-[#144385]">
-							<span className="text-white font-bold text-sm">BBVA</span>
-						</div>
-					</div>
-
-					{/* Card Body */}
-					<div className="p-6 md:p-8 flex-grow flex flex-col gap-6">
-						{/* In the image, the account number is formatted with spaces */}
-						<DataRow label="Cuenta Clabe" value="012 180 0152 3943 2009" copyId="bbva-cuenta" />
-
-						<div className="border-t border-slate-100 pt-6">
-							<DataRow label="Número de Tarjeta de Débito" value="4152 3143 3099 6870" copyId="bbva-tarjeta" />
 						</div>
 					</div>
 				</div>
